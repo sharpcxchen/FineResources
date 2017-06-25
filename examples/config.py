@@ -5,15 +5,13 @@ import lcba.globalVar as glo
 import lcba.util as util
 import os
 
+#定义一些全局的关键字
 KEY_WORK_PATH="_work_path"
 KEY_LCBA_PATH="_lcba_path"
 KEY_GRADLEW_PATH="_gradle_path"
 KEY_REASON="_reason"
 
-#常量: 生成apk的编译命令
-BUILD_APK_TASK = "assembleRelease"
-
-#for lint
+#############for step lint
 #常量: 生成lint报告的文件
 LINT_RESULT_PATH = "build/reports/lint-results.xml"
 #常量: 生成lint 报告的命令
@@ -26,7 +24,10 @@ IGNORE_LAYOUTS_FILE = False
 IGNORE_LAYOUTS_VALUE = True
 #常量: 解决布局文件中被删除的文件中含有@+id，被其他文件@id引用的情况
 LAYOUT_IDS_PATH = "src/main/res/values/lint_ids.xml"
+#常量: manifest的路径
+ANDROID_MANIFEST_FILE = "src/main/AndroidManifest.xml"
 
+###############for step compress
 #常量:账号列表
 ACCOUNT_KEY_LIST = [
     "sXzp30KfRZaf0NlWaQP0U3qEwQwoCl7s",#use feiy1@jumei.com register
@@ -40,9 +41,11 @@ MODULES_NAME = [
     #'baselib',#lint 的时候有依赖baselib，但是它在模块内未使用
 ]
 
+#########for step andResGuard
 #常量: 生成apk的编译命令
+BUILD_APK_TASK = "assembleRelease"
+#常量: 生成apk的路径
 BUILD_APK_PATH = "build/outputs/apk/app-release.apk"
-ANDROID_MANIFEST_FILE = "src/main/AndroidManifest.xml"
 
 def initModules():
     workPath = findWorkingPath()
