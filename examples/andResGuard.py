@@ -26,7 +26,7 @@ def andResGuard():
 		apkPath = os.path.join(modulePath,config.BUILD_APK_PATH)
 		outDirPath = os.path.join(lcbaPath, module_name)
 		# andres.useAndResGuard(apkPath,os.path.join(outDirPath,"JumeiOut"))
-		configPath = os.path.join('/Users/tory/working/Codes/JUMEI/android/lcba/lcba_PyPI/examples','AndResGuard_config.xml')
+		configPath = os.path.join('/Users/tory/working/Codes/JUMEI/android/lcba/','AndResGuard_config.xml')
 		andres.useAndResGuard(apkPath,os.path.join(outDirPath,"JumeiOut"),configPath)
 	pass
 pass

@@ -1,4 +1,5 @@
-#LCBA version 0.1.5
+#LCBA version 0.1.6
+
 *LCBA is a wrapper around dulwich. It provides an easy and familiar interface to git.
 *It's pure python (no dependency on the ``git`` binary) and has no other dependencies besides
     the python stdlib, dulwich and paramiko (optional).
@@ -13,14 +14,14 @@
 
 ##怎样使用
 
-*核心包我们已经更新到pip服务器，最新版本0.1.5
+*核心包我们已经更新到pip服务器，最新版本0.1.6
 
 *安装依赖
 
     >>1).pip install lxml 
     >>2).pip install lcba
     >>3).pip install tinify
-    >>4).brew install 7za （如果你不使用andResGuard对apk资源进行混淆可以不用安装）
+    >>4).brew install p7zip （如果你不使用andResGuard对apk资源进行混淆可以不用安装）
 
 ##步骤
 1,拷贝examples下面的代码到你的工作目录;
@@ -40,6 +41,8 @@
     **如果你使用我们的方案二会自动在工程中寻找这些参数文件
 ![lint_2](readme_pic/lint_2.png)
 
+    **运行:python lintRes.py
+
 
 3,对图片进行压缩
 
@@ -49,6 +52,22 @@
 tinypng每个帐号单月500张的限制，so 多申请点;
 
 后期有好的，我们会及时更换sdk
+
+4,修改config.py来压缩图片，其中模块是你要处理的模块
+![compressPNG](readme_pic/compressPNG.png)
+
+5,使用AndResGuard来混淆你的apk资源
+
+    **修改你的config.py
+![andres_guard](readme_pic/andres_guard.png)
+
+    **lcba模块内置了jar包和配置文件，如果你想用自己的配置文件
+![andres_gurad_config](readme_pic/andres_guard_config.png)
+
+    **运行python andResGurad.py
+
+更多andResGuard 配置修改see:[andRes_config](https://github.com/shwenzhang/AndResGuard/blob/master/doc/how_to_work.zh-cn.md)
+
 
 #bug 反馈请联系我
 

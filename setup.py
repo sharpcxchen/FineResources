@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="lcba",
-    version="0.1.5",
+    version="0.1.6",
     author="tory you",
     author_email="feiy1@jumei.com",
     description="lint clean android and compress android resources",
