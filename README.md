@@ -5,11 +5,14 @@
 
 ##有哪些功能
 1，对android资源的自动化优化，并解决若干lint及lint删除资源和内容引起的问题;
+
 2，并且我们还实现了对图片资源的压缩，极大的降低了内存使用空间，支持增量和自动化动化的压缩出处理，支持对apk进行资源混淆以再次节省空间；
+
 3，支持模块化的pip更新方式，模块化以便移植，未来还将自持ios的图片压缩；
 
 ##怎样使用
 *核心包我们已经更新到pip服务器，最新版本0.1.5
+
 *安装依赖
 
     >>1).pip install lxml 
@@ -20,4 +23,17 @@
 ##步骤
 1,拷贝examples下面的代码到你的工作目录;
 ![copy_lcba](readme_pic/copy_lcba.png)
-2,修改config.py
+
+2,lint 删除资源
+
+    *使用lint工具来读区 ./gradlew lint 生成的lint报告并调用lcba模块进行处理
+![lint_report](readme_pic/lint_report.png)
+
+    **如果你使用我们的方案一自己定义文件工程位置
+![lint_1](readme_pic/lint_1.png)
+
+    **请配置config.py 的lint配置
+![lint_config](readme_pic/lint_config.png)
+
+    **如果你使用我们的方案二会自动在工程中寻找这些参数文件
+![lint_2](readme_pic/lint_2.png)

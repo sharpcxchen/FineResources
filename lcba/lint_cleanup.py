@@ -281,10 +281,10 @@ def deleteRes(app_dir,lint_result_path=None, manifest_path=None,out_ids_path=Non
                     manifest_path = os.path.join(dirpath,filename)
                     print "find AndroidManifest.xml:%s"%manifest_path
                 pass
-            elif not lint_result_path and "lint-results.xml" in filename:
-                if "build" in dirpath:
+            elif not lint_result_path and "lint-results" in filename:
+                if "build" in dirpath and filename.endswith('.xml'):
                     lint_result_path = os.path.join(dirpath,filename)
-                    print "find lint-results.xml:%s"%lint_result_path
+                    print "find lint reprt:%s"%lint_result_path
                 pass
         pass
         if not out_ids_path and 'res/values' in dirpath:

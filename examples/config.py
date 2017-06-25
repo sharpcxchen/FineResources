@@ -16,8 +16,6 @@ KEY_REASON="_reason"
 LINT_RESULT_PATH = "build/reports/lint-results.xml"
 #常量: 生成lint 报告的命令
 TASK_LINT = "lint"
-#常量: android sdk
-ANDROID_SDK = "/Users/tory/Library/Android/sdk/"
 #常量: 忽略无用的布局文件
 IGNORE_LAYOUTS_FILE = False
 #常量: 忽略布局文件里面的内容，不要该成False！！！
