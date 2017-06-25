@@ -46,12 +46,14 @@
 
 3,对图片进行压缩
 
-    *对比了几种压缩的sdk，我们使用了tinypng的sdk，原因是它是在线的，不占用本地空间
+    **对比了几种压缩的sdk，我们使用了tinypng的sdk，原因是它是在线的，不占用本地空间
 首先你要到[tinypng](https://tinypng.com/developers)申请一些列的apikey,如图所示;
 ![tinypng_apikey_get](readme_pic/tinypng_apikey_get.png)
 tinypng每个帐号单月500张的限制，so 多申请点;
 
-后期有好的，我们会及时更换sdk
+    **运行python compressRes.py
+
+后期有好的压缩sdk，我们会及时更换。
 
 4,修改config.py来压缩图片，其中模块是你要处理的模块
 ![compressPNG](readme_pic/compressPNG.png)
@@ -67,6 +69,11 @@ tinypng每个帐号单月500张的限制，so 多申请点;
     **运行python andResGurad.py
 
 更多andResGuard 配置修改see:[andRes_config](https://github.com/shwenzhang/AndResGuard/blob/master/doc/how_to_work.zh-cn.md)
+
+
+6,如果你都修改好了，可以把这几步一起跑下
+
+    **运行:python main.py
 
 
 #bug 反馈请联系我
