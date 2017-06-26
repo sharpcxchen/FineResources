@@ -18,7 +18,7 @@
 *安装依赖
 
     >>1).pip install lxml 
-    >>2).pip install lcba
+    >>2).pip install lcba(核心模块)
     >>3).pip install tinify
     >>4).brew install p7zip （如果你不使用andResGuard对apk资源进行混淆可以不用安装）
 

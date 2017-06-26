@@ -7,7 +7,7 @@ import lcba.globalVar as glo
 import lcba.util as util
 
 ################################################
-#进行lint资源删除方案一@param just_chek 是否只做检查，if True 不删除lint 多余文件，只报警，一般用于服务器打包测试
+#进行lint资源压缩@param just_chek 是否只做检查，if True 不删除lint 多余文件，只报警，一般用于服务器打包测试
 ###############################################
 def lintResource(just_check=False):
 	print "###############################"
@@ -81,8 +81,8 @@ pass
 ###############################################
 def main():
 	config.initModules()
-	# lintResource(False)
-	lintResource_2(False)
+	lintResource(False)
+	# lintResource_2(False)
 
 pass
 

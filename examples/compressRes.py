@@ -16,7 +16,7 @@ def compressPic(just_check=False):
     print "###############################"
 
     workPath = glo.getValue(config.KEY_WORK_PATH)
-    lcbaPath = glo.getValue(config.KEY_LCBA_PATH)
+    lcbaPath = glo.getValue(config.KEY_FINE_PATH)
     print "Current Path is:%s" % (workPath)
     modules_name = config.MODULES_NAME
     if not workPath or not modules_name or not lcbaPath:

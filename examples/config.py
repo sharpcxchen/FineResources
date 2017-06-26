@@ -7,7 +7,7 @@ import os
 
 #定义一些全局的关键字
 KEY_WORK_PATH="_work_path"
-KEY_LCBA_PATH="_lcba_path"
+KEY_FINE_PATH= "_fineresources_path"
 KEY_GRADLEW_PATH="_gradle_path"
 KEY_REASON="_reason"
 
@@ -54,9 +54,9 @@ def initModules():
 
     os.chdir(workPath)
     glo.set_value(KEY_WORK_PATH,workPath)
-    lcbaDirPath=os.path.join(workPath,"lcba")
-    if os.path.exists(lcbaDirPath):
-        glo.set_value(KEY_LCBA_PATH,lcbaDirPath)
+    fineDirPath=os.path.join(workPath,"fine_resources")
+    if os.path.exists(fineDirPath):
+        glo.set_value(KEY_FINE_PATH, fineDirPath)
     pass
     gradlewPath=os.path.join(workPath,"gradlew")
     if os.path.exists(gradlewPath):

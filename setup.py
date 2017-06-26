@@ -23,6 +23,7 @@ setup(
     install_requires=[
         "lxml",
         # lxml_requirement
+        "tinify",
     ],
     keywords="lint resource",
     classifiers=[

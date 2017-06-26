@@ -9,9 +9,6 @@ import config
 import lcba.globalVar as glo
 import andResGuard
 
-#常量: 生成apk的编译命令
-BUILD_APK_TASK = config.BUILD_APK_TASK
-
 ################################################
 #主函数
 ###############################################
@@ -40,7 +37,7 @@ def main():
 	compressRes.compressPic()
 
 	#编译生成apk
-	if util.haveGradleTask(workPath,gradlewPath,BUILD_APK_TASK):
+	if util.haveGradleTask(workPath,gradlewPath,config.BUILD_APK_TASK):
 		#删除build目录自己编译，因为lint资源删除了一些资源，不删除会提示找不到
 		print "###############################"
 		print "Now build apk"

@@ -11,7 +11,7 @@ def andResGuard():
 	print "Now andResGuard"
 	print "###############################"
 	workPath = glo.getValue(config.KEY_WORK_PATH)
-	lcbaPath = glo.getValue(config.KEY_LCBA_PATH)
+	lcbaPath = glo.getValue(config.KEY_FINE_PATH)
 	modules_name = config.MODULES_NAME
 	if None == workPath or None == modules_name or None == lcbaPath:
 		print "andResGuard()...work path is empty!!!"
@@ -26,7 +26,7 @@ def andResGuard():
 		apkPath = os.path.join(modulePath,config.BUILD_APK_PATH)
 		outDirPath = os.path.join(lcbaPath, module_name)
 		# andres.useAndResGuard(apkPath,os.path.join(outDirPath,"JumeiOut"))
-		configPath = os.path.join('/Users/tory/working/Codes/JUMEI/android/lcba/','AndResGuard_config.xml')
+		configPath = os.path.join('/Users/tory/working/Codes/JUMEI/android/lcba/lcba_PyPI/examples','AndResGuard_config.xml')
 		andres.useAndResGuard(apkPath,os.path.join(outDirPath,"JumeiOut"),configPath)
 	pass
 pass
