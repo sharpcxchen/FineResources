@@ -23,8 +23,8 @@
     >>4).brew install p7zip （如果你不使用andResGuard对apk资源进行混淆可以不用安装）
 
 ##步骤
-1,拷贝examples下面的代码到你的工作目录;
-![copy_lcba](readme_pic/copy_lcba.png)
+1,新建fine_resources目录，拷贝examples下面的代码到你的工作目录;
+![copy_fineresources](readme_pic/copy_fineresources.png)
 
 2,lint 删除资源
 
