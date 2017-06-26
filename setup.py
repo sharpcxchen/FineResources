@@ -14,7 +14,7 @@ setup(
     """,
     # long_description=open('README.md').read(),
     license="MIT",
-    url="https://www.baidu.com",
+    url="https://github.com/JumeiRdGroup/FineResources",
     packages=['lcba'],
     package_dir={'lcba': 'lcba'},
     # package_data={'lcba': ['html/*.html']},

@@ -1,8 +1,7 @@
-#LCBA version 0.1.6
+#FineResource version 0.1.6
 
-*LCBA is a wrapper around dulwich. It provides an easy and familiar interface to git.
-*It's pure python (no dependency on the ``git`` binary) and has no other dependencies besides
-    the python stdlib, dulwich and paramiko (optional).
+*LCBA is a fineresource project use lint delete unUsed file and value. And this we will compress the picture for
+          save the disk.
 
 ##有哪些功能
 
@@ -14,7 +13,7 @@
 
 ##怎样使用
 
-*核心包我们已经更新到pip服务器，最新版本0.1.6
+*FineResources 依赖我们的核心包lcba我们已经更新到pip服务器，最新版本0.1.6
 
 *安装依赖
 
